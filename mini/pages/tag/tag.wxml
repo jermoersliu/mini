@@ -1,0 +1,6 @@
+<view>
+  <view bindtap='tagMethod'>{{innerText3}}
+    
+  </view>
+  <custom></custom>
+</view>

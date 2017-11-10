@@ -1,0 +1,60 @@
+/* page/component/pages/identindex/identindex.wxss */
+/* .index-wrap .ad{
+      margin-bottom: 40rpx;background:url(https://beta.gtimg.com/GodIdent/webconfig/jpg/2017/08/1a6c5ff9e04bdccff34c60f093821193.jpg) no-repeat center bottom;-webkit-background-size:cover;background-size:cover;height:547rpx;
+}
+.index-wrap .ad image{
+  width:100%;
+} */
+.widget__arrow{
+  width: 100%;
+}
+.index-wrap .weui-btn-area{
+     margin-left: 30rpx;
+    margin-right: 30rpx;
+    line-height: 1;
+    text-align: center;
+    margin-top: 30rpx;
+}
+.index-wrap .main{
+      height: auto;
+    min-height: 100%;
+    padding-bottom: 120rpx;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  
+}
+.index-wrap .page-foot {
+  text-align: center;
+      position: relative;
+    margin-top: -50px;
+    color: #a3a3a3;
+    font-size: 14px;
+    line-height: 1;
+    z-index: 1;
+}
+.index-wrap .page-foot .agree .radio{
+      font-size: 12px;
+      color: #a3a3a3;
+}
+.index-wrap .page-foot .agree .icon-small{
+  vertical-align: middle;margin-right:5px;
+}
+.index-wrap .page-foot .hint{
+      font-size: 12px;
+    color: #a3a3a3;
+}
+.index-wrap .page-foot .hint image{
+margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    height: 18px;
+    margin-bottom: 2px;
+    width:64px;
+}
+.index-wrap .page-foot .agree view {display: inline-block;color:#007aff;}
+
+.index-wrap .weui-dialog.protocol .weui-dialog__bd{
+    text-align:left;
+    max-height:300px;
+    overflow-y:auto;
+}

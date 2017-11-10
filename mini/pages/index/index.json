@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "custom": "/pages/custom/custom",
+    "data": "/pages/data/data",
+    "tag": "/pages/tag/tag"
+  }
+}
+

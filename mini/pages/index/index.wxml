@@ -1,0 +1,50 @@
+<!-- <import src="../../templates/error-toast/error-toast.wxml"/> -->
+
+<view class="container index-wrap {{unscrollable}}">
+    <view class="page-body">
+        <view class="page-section main">
+           <image class="widget__arrow" src="https://beta.gtimg.com/GodIdent/webconfig/jpg/2017/08/1a6c5ff9e04bdccff34c60f093821193.jpg" mode="aspectFill"></image> 
+           <view class="weui-btn-area">
+              <button type="primary" disabled="{{!next}}" bindtap="goNext">快速验证</button>
+           </view>
+        </view>
+    </view>
+    <view class="page-foot">
+        <view class="agree">
+            <label class="checkbox" bindtap="checkboxChange">
+                <icon class="icon-small" type="circle" size="20" wx:if="{{!checkedBox}}"></icon>
+                <icon class="icon-small" type="success" size="20" color="#0079ff" wx:if="{{checkedBox}}"></icon>我已认真阅读并同意
+            </label>
+            <view class="btn" bindtap="switchIndexRule" data-statu="open">全部协议</view>
+        </view>
+        <view class="hint">由<image src="../../resources/res/images/youtulogo.png"></image>提供技术支持</view>
+    </view>
+
+
+    <template is="error_template" data="{{...item}}" wx:if="{{show_error_msg}}"></template>
+
+    <!--dialog-->
+    <view class="js_dialog" id="iosDialog1" style="opacity: 1;" wx:if="{{index_rule}}">
+            <view class="weui-mask"></view>
+            <view class="weui-dialog protocol ">
+                <view class="weui-dialog__hd"><strong class="weui-dialog__title">测试实名核身用户须知</strong></view>
+                <view class="weui-dialog__bd" style="text-align:left;max-height:300px">
+                    <view>一、注意事项</view>
+                    <view>（一）测试实名核身系统。</view>
+                    <view>（二）为保证本系统的使用效果，我们需要您在实名验证时提供本人的真实身份身份证、联系电话等个人信息进行并通过本系统的实名核身认证。</view>
+                    <view>二、用户须知</view>
+                    <view>（一）在您使用本系统期间，本系统可用如下方式收集和使用您的设备和其他相关信息：</view>
+                    <view>1、使用您的定位信息：在使用实名核身及全程电子化系统的其他服务功能时，本系统可获取您的定位信息，以便提高服务功能准确性，为您提供良好的服务体验。</view>
+                    <view>2、使用摄像头：在使用优图认证及全程电子化系统的其他服务功能时，本系统可访问您的手机摄像头，并获取您在使用期间产生的相关照片、图像。</view>
+                    <view>3、其他信息：在使用优图认证及全程电子化系统的其他服务功能时，本软件可获取您实名验证时身份证正反面所有信息、身份证正反面照片、手机号码等。</view>
+                    <view>三、其他</view>
+                    <view>（一）腾讯具有测试demo的最终解释权。</view>
+                    <view>（二）若您在收到本告知后仍继续使用本软件服务，系统将默认为您已充分阅读、理解并接受告知协议内容，也将在遵循告知内容的前提下使用本服务。</view>
+                </view>
+                <view class="weui-dialog__ft">
+                    <view bindtap="switchIndexRule" class="weui-dialog__btn weui-dialog__btn_primary">我知道了</view>
+                </view>
+            </view>
+    <!--dialog-->
+    </view>
+</view>

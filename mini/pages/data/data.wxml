@@ -1,0 +1,4 @@
+<view class="inner">
+  {{innerText2}}
+  <slot></slot>
+</view>
